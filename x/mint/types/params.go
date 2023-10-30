@@ -93,7 +93,7 @@ func validateBondingAdjustment(i interface{}) error {
 	}
 
 	if v.IsNegative() {
-		return fmt.Errorf("inflation coefficient cannot be negative: %s", v)
+		return fmt.Errorf("bonding adjustment cannot be negative: %s", v)
 	}
 
 	return nil

@@ -26,17 +26,17 @@ func GenInflation(r *rand.Rand) sdk.Dec {
 	return sdk.NewDecWithPrec(int64(r.Intn(99)), 2)
 }
 
-// GenInflationCoefMax randomized AnnualReductionFactor.
+// GenInflationCoefMax randomized InflationCoef.
 func GenInflationCoefMax(_ *rand.Rand) sdk.Dec {
 	return sdk.NewDecWithPrec(73, 3)
 }
 
-// GenBondingAdjustmentMax randomized AnnualReductionFactor.
+// GenBondingAdjustmentMax randomized BondingAdjustment.
 func GenBondingAdjustmentMax(_ *rand.Rand) sdk.Dec {
 	return sdk.NewDecWithPrec(25, 1)
 }
 
-// GenTargetBondingRatioMax randomized AnnualReductionFactor.
+// GenTargetBondingRatioMax randomized TargetBondingRatio.
 func GenTargetBondingRatioMax(_ *rand.Rand) sdk.Dec {
 	return sdk.NewDecWithPrec(66, 2)
 }
